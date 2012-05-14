@@ -1,0 +1,3 @@
+Name: libcee 
+Description: Library to handle the C-specific issues (header parsing, AST construction, etc) in rock
+SourcePath: source
