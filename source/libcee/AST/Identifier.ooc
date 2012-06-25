@@ -10,7 +10,7 @@ Identifier: class extends Node {
     value: String
 
     /**
-     * Initializes an Identifier with give value
+     * Initializes an Identifier with from a String value
      */
     init: func(=value) {}
 

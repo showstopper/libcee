@@ -43,7 +43,7 @@ vAcc: func ~str (value: String) -> VariableAccess {
  * Creates a variable declaration
  * Example: vDecl(ident("int") => ident("foo"), ident("bar")) // int foo = bar;
  */
-vDecl: func(pair: Pair<Node, Identifier>, value: Expression = null) -> VariableDeclaration {
-    VariableDeclaration new(pair left as Node, pair right as Identifier, value)
+vDecl: func(pair: Pair<Node, Identifier>, value: Expression = null, storage: Storage = Storage _auto) -> VariableDeclaration {
+    VariableDeclaration new(pair left as Node, pair right as Identifier, value, storage)
 }
 
