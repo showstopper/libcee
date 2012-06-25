@@ -4,10 +4,14 @@
  */
 Node: abstract class {
 
-    // Helper property to use for easier debuging
+    /**
+     * Helper property to use for easier debuging
+     */
     _: String { get { toString() } }
 
-    // Returns a string representation of the Node
+    /** Returns a string representation of the Node
+     *
+     */
     toString: abstract func -> String
 
 }
