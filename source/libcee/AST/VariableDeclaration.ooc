@@ -69,7 +69,9 @@ VariableDeclaration: class extends Statement {
     init: func ~typeNameValueStorage (=type, =name, =value, =storage) {}
 
     toString: func -> String {
-        storage toString() + match value {
+        prefix := storage toString()
+        if(!prefix empty?()) prefix = prefix + " "
+        prefix + match value {
             case null => "#{type} #{name};"
             case      => "#{type} #{name} = #{value};"
         }
