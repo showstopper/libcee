@@ -18,7 +18,7 @@ Node: abstract class {
      * Returns a special formatted string better fit for debugging
      */
     debugString: func -> String {
-        "Node #{this} of type #{class name}"
+        "Node #{_} of type #{class name}"
     }
 }
 

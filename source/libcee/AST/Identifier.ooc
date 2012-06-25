@@ -13,4 +13,7 @@ Identifier: class extends Node {
      * Initializes an Identifier with give value
      */
     init: func(=value) {}
+
+    toString: func -> String { value }
 }
+
