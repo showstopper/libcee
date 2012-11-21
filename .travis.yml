@@ -8,4 +8,4 @@ script:
   - export OOC_LIBS=$PWD
   - cd samples
   - mkdir -p bin
-  - rock -v -r builder-sample.ooc -o=bin/sample
+  - rock -v builder-sample.ooc -o=bin/sample && ./bin/sample
